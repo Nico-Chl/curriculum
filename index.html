@@ -10,7 +10,7 @@
     @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
     body {
-      background-image: url('/curriculum/public/b.jpg');
+      background-image: url('curriculum/public/b.jpg');
       background-size: cover;
       -webkit-animation: slidein 100s;
       animation: slidein 100s;
@@ -57,6 +57,7 @@
       color: #fff;
       /* Text color for the banner */
       padding-top: 60px;
+      text-shadow: -1px 1px 0 #000;
     }
 
     .photo {
@@ -65,11 +66,49 @@
       height: 200px;
       margin: 0 auto;
       border-radius: 50%;
-      background-image: url('/curriculum/public/me.jpg');
+      background-image: url('curriculum/public/me.jpg');
       background-size: cover;
       background-position: center;
       border: 3px solid #f1eeee;
     }
+
+    .kubernetes_badge {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: url('curriculum/public/kubernetes.png');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #f1eeee;
+    }
+
+    .azure_badge {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: url('curriculum/public/azure.png');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #f1eeee;
+    }
+
+    /* Certifs */
+     /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
   </style>
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
 </head>
@@ -83,12 +122,18 @@
     </div>
   </a>
 
-  <a name="bnews">
-    <div class="banner">
-      <h1>Nicolas Chevreul</h1>
-      <p class="photo"></p>
-      <p>Software Consultant</p>
-    </div>
+  <a name="certifications" class="banner">
+    <div class="row">
+      <h1 >Certifications</h1>
+      <div class="column">
+        <p class="kubernetes_badge"></p>
+        <p>Kubernetes Administrator - 2022</p>
+      </div>
+      <div class="column">
+        <p class="azure_badge"></p>
+        <p>Azure Fundamentals - 2021</p>
+      </div>
+    </div> 
   </a>
 
   <a name="contact">
@@ -99,7 +144,7 @@
   <nav class="bottom-nav">
     <ul>
       <li><a href="#news">Home</a></li>
-      <li><a href="#bnews">Portfolio</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
