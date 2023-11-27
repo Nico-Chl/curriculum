@@ -1,8 +1,3 @@
-.bottom-nav {
-    background-color: #cc5e5e;
-}
-
-/* Change the link color to #111 (black) on hover */
 .bottom-nav li a:hover {
     background-color: #111;
 }
@@ -21,10 +16,6 @@
     bottom: 0;
     width: 100%;
     float: none;
-}
-
-.bottom-nav li {
-    margin: 5px;
 }
 
 .bottom-nav a {
