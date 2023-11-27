@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <style>
+        /* Container for flags */
+        .flags-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 60px;
+            text-shadow: -1px 1px 0 #000;
+            color: #fcf8f8;
+            font-size: 30px;
+            line-height: 1.5;
+        }
+
+        /* Base styling for the flag */
+        .flag {
+            width: 200px;
+            height: 120px;
+            border: 1px solid #000;
+            margin-right: 20px;
+            /* Adding some space between flags */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Styling for the England flag */
+        .england-flag {
+            background-image: url('/curriculum/public/eg.jpg');
+        }
+
+        /* Styling for the Spain flag */
+        .spain-flag {
+            background-image: url('/curriculum/public/es.jpg');
+        }
+
+        /* Styling for the France flag */
+        .france-flag {
+            background-image: url('/curriculum/public/fr.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <h2>Spoken languages</h2>
+        <div class="flags-container">
+            <div class="flag england-flag"></div>
+            <div class="flag spain-flag"></div>
+            <div class="flag france-flag"></div>
+        </div>
+    </div>
+</body>
+
+</html>
