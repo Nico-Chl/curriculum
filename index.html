@@ -2,188 +2,105 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Chevreul - Software Consultant</title>
+  <meta name="description" content="Nicolas Chevreul, software consultant: back-end Java/Quarkus and .NET, Kubernetes, Azure.">
+  <meta property="og:title" content="Nicolas Chevreul - Software Consultant">
+  <meta property="og:description" content="Back-end Java/Quarkus and .NET, Kubernetes, Azure.">
+  <meta property="og:image" content="public/me.jpg">
   <link rel="icon" href="data:,">
-  <title>Nicolas Chevreul</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
-
-    body {
-      background-image: url('/curriculum/public/b.jpg');
-      background-size: cover;
-      -webkit-animation: slidein 100s;
-      animation: slidein 100s;
-
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-
-      -webkit-animation-direction: alternate;
-      animation-direction: alternate;
-    }
-
-    @-webkit-keyframes slidein {
-      from {
-        background-position: top;
-        background-size: 3000px;
-      }
-
-      to {
-        background-position: -100px 0px;
-        background-size: 2750px;
-      }
-    }
-
-    @keyframes slidein {
-      from {
-        background-position: top;
-        background-size: 3000px;
-      }
-
-      to {
-        background-position: -100px 0px;
-        background-size: 2750px;
-      }
-
-    }
-
-    .banner {
-      flex: 1;
-      /* Take maximum available space */
-      text-align: center;
-      color: #fff;
-      /* Text color for the banner */
-      padding-top: 60px;
-      text-shadow: -1px 1px 0 #000;
-    }
-
-    .width-text {
-      width: 500px;
-      margin: 0 auto;
-    }
-
-    .photo {
-      display: block;
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background-image: url('/curriculum/public/me.jpg');
-      background-size: cover;
-      background-position: center;
-      border: 3px solid #f1eeee;
-    }
-
-    .kubernetes_badge {
-      display: block;
-      width: 150px;
-      height: 150px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background-image: url('/curriculum/public/kubernetes.png');
-      background-size: cover;
-      background-position: center;
-      border: 3px solid #f1eeee;
-    }
-
-    .azure_badge {
-      display: block;
-      width: 150px;
-      height: 150px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background-image: url('/curriculum/public/azure.png');
-      background-size: cover;
-      background-position: center;
-      border: 3px solid #f1eeee;
-    }
-
-    /* Certifs */
-    /* Three image containers (use 25% for four, and 50% for two, etc) */
-    .column {
-      float: left;
-      width: 50%;
-    }
-
-    /* Clear floats after image containers */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    /* Styling for the separator */
-    .separator {
-      width: 80%;
-      height: 1px;
-      background-color: #837777;
-      margin: 50px 5;
-    }
-  </style>
-  <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Code+Pro:wght@600&display=swap">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <a name="news">
-    <div class="banner">
-      <h1>Nicolas Chevreul</h1>
-      <p class="photo"></p>
-      <p>Software Consultant</p>
-      <br>
-    </div>
-  </a>
-
-  <hr class="separator">
-
-  <a name="profile">
-    <div class="banner">
-      <h1>Profile</h1>
-      <p class="width-text">I specialize in crafting clean and efficient back-end code that drives the applications of the future. I strongly advocate the 'build it, you run it' ethos and thrive in environments that embody this philosophy. Additionally, I bring hands-on front-end experience to the table. I'm confident in my capacity to take on responsibilities and deliver results.</p>
-      <br>
-      <br>
-    </div>
-  </a>
-
-  <hr class="separator">
-
-  <a name="skills">
-    <iframe src="f.html" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
-  </a>
-
-  <hr class="separator">
-
-  <a name="certifications" class="banner">
-    <div class="row">
-      <h1>Certifications</h1>
-      <div class="column">
-        <p class="kubernetes_badge"></p>
-        <p>Kubernetes Administrator - 2022</p>
+  <main>
+    <section id="home" class="hero">
+      <img class="photo" src="public/me.jpg" alt="Portrait of Nicolas Chevreul" width="160" height="160">
+      <div>
+        <h1>Nicolas Chevreul</h1>
+        <p class="role">Software Consultant</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Contact me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/nicolas-chevreul-308b5a11b/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <div class="column">
-        <p class="azure_badge"></p>
-        <p>Azure Fundamentals - 2021</p>
+    </section>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>I specialize in crafting clean and efficient back-end code that drives the applications of the future. I strongly advocate the 'build it, you run it' ethos and thrive in environments that embody this philosophy. Additionally, I bring hands-on front-end experience to the table. I'm confident in my capacity to take on responsibilities and deliver results.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Java</h3>
+        <ul class="chips"><li class="chip">Java 17</li><li class="chip">Quarkus</li><li class="chip">Gradle/Maven</li><li class="chip">JUnit/Mockito</li><li class="chip">IntelliJ/Eclipse</li></ul>
       </div>
-    </div>
-  </a>
+      <div class="skill-group">
+        <h3>.NET</h3>
+        <ul class="chips"><li class="chip">C#</li><li class="chip">.NET 6</li><li class="chip">XUnit</li><li class="chip">Rider</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Architecture</h3>
+        <ul class="chips"><li class="chip">Micro-Services</li><li class="chip">RESTful APIs</li><li class="chip">Domain Driven Design</li><li class="chip">Onion Architecture</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="chips"><li class="chip">Kubernetes</li><li class="chip">Docker</li><li class="chip">ArgoCD</li><li class="chip">Azure</li><li class="chip">Grafana &amp; Prometheus</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <ul class="chips"><li class="chip">MongoDB/Atlas</li><li class="chip">CosmosDB</li><li class="chip">PostgreSQL</li><li class="chip">H2</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Practices</h3>
+        <ul class="chips"><li class="chip">Git</li><li class="chip">Agile Methodologies</li></ul>
+      </div>
+    </section>
 
-  <hr class="separator">
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="public/kubernetes.png" alt="Kubernetes logo" width="72" height="72">
+          <div><p>Kubernetes Administrator</p><p class="date">2022</p></div>
+        </div>
+        <div class="card">
+          <img src="public/azure.png" alt="Azure logo" width="72" height="72">
+          <div><p>Azure Fundamentals</p><p class="date">2021</p></div>
+        </div>
+      </div>
+    </section>
 
-  <a name="languages">
-    <iframe src="languages.html" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
-  </a>
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="lang-list">
+        <li>🇬🇧 English</li>
+        <li>🇪🇸 Spanish</li>
+        <li>🇫🇷 French</li>
+      </ul>
+    </section>
 
-  <hr class="separator">
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:nicolas.chevreul@protonmail.com">nicolas.chevreul@protonmail.com</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/nicolas-chevreul-308b5a11b/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+      </ul>
+      <a href="https://www.codementor.io/@nicolaschl28?refer=badge" target="_blank" rel="noopener">
+        <img src="https://www.codementor.io/m-badges/nicolaschl28/find-me-on-cm-g.svg" alt="Find me on Codementor" height="40">
+      </a>
+    </section>
+  </main>
 
-  <a name="contact">
-    <iframe src="f.html" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
-  </a>
-
-
-  <nav class="bottom-nav">
+  <nav class="bottom-nav" aria-label="Sections">
     <ul>
-      <li><a href="#news">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#profile">Profile</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#certifications">Certifications</a></li>
@@ -191,7 +108,6 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
 </body>
 
 </html>
