@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-label="CAPM">
+  <circle cx="56" cy="56" r="52" fill="#0b7a5b"/>
+  <circle cx="56" cy="56" r="44" fill="none" stroke="#ffffff" stroke-opacity=".6" stroke-width="2"/>
+  <text x="56" y="64" text-anchor="middle" font-family="Source Code Pro, ui-monospace, Menlo, Consolas, monospace" font-size="26" font-weight="700" fill="#ffffff">CAPM</text>
+  <text x="56" y="82" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#ffffff" fill-opacity=".85">PROJECT MGMT</text>
+</svg>

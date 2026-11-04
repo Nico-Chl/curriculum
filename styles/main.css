@@ -75,6 +75,25 @@ section:first-child { border-top: 0; }
 .contact-list li { margin-bottom: 6px; }
 .contact-list span { color: var(--muted); display: inline-block; min-width: 90px; }
 
+/* Language switch */
+.lang-switch { position: fixed; top: 12px; right: 12px; z-index: 10; display: flex; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.lang-switch a { padding: 6px 12px; color: var(--text); text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.lang-switch a:hover { background: var(--chip); }
+.lang-switch a[aria-current] { background: var(--accent); color: var(--bg); }
+
+.hero .tagline { color: var(--muted); margin: -12px 0 20px; font-size: 0.95rem; }
+
+/* Experience */
+.job { margin-bottom: 28px; padding-left: 16px; border-left: 2px solid var(--border); }
+.job h3 { margin: 0; font-size: 1.05rem; }
+.job h4 { margin: 16px 0 4px; font-size: 0.95rem; color: var(--accent); }
+.job .co { margin: 2px 0 0; color: var(--muted); }
+.job .dates { margin: 0 0 8px; font-size: 0.85rem; color: var(--muted); font-family: "Source Code Pro", ui-monospace, monospace; }
+.job ul { margin: 8px 0 0; padding-left: 20px; }
+.job li { margin-bottom: 4px; }
+.job.edu { margin-bottom: 20px; }
+.lang-list .level { color: var(--muted); }
+
 /* Bottom nav */
 .bottom-nav { position: fixed; inset: auto 0 0 0; height: var(--nav-h); background: var(--surface); border-top: 1px solid var(--border); }
 .bottom-nav ul { display: flex; justify-content: center; height: 100%; margin: 0; padding: 0; list-style: none; overflow-x: auto; }
